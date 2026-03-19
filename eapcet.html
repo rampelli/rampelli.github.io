@@ -20,9 +20,21 @@
     <meta name="twitter:url" content="https://play.google.com/store/apps/details?id=com.eapcet.eapcet_app&hl=en_IN&utm_source=instagram&utm_medium=profile_bio&utm_campaign=ig_profile_eapcet&utm_content=instagram_profile_link" />
 </head>
 <body>
-    <script>
-        window.location.href = "https://play.google.com/store/apps/details?id=com.eapcet.eapcet_app&referrer=utm_source%3Dinstagram%26utm_medium%3Dprofile_bio%26utm_campaign%3Dig_profile_eapcet%26utm_content%3Dinstagram_profile_link";
-    </script>
+    <a id="installLink" rel="noopener"
+   href="https://play.google.com/store/apps/details?id=com.eapcet.eapcet_app&referrer=utm_source%3Dinstagram%26utm_medium%3Dprofile_bio%26utm_campaign%3Dig_profile_eapcet%26utm_content%3Dinstagram_profile_link">
+  Install App
+</a>
+
+<script>
+  // Optional auto-redirect, but keep clickable fallback above
+  const ref = encodeURIComponent(
+    "utm_source=instagram&utm_medium=profile_bio&utm_campaign=ig_profile_eapcet&utm_content=instagram_profile_link"
+  );
+  location.replace(
+    "https://play.google.com/store/apps/details?id=com.eapcet.eapcet_app&referrer=" + ref
+  );
+</script>
+
     <noscript>
         <h1>EAPCET Master: AI-Powered Prep</h1>
         <p>If you are not redirected automatically, <a href="https://play.google.com/store/apps/details?id=com.eapcet.eapcet_app&hl=en_IN&utm_source=instagram&utm_medium=profile_bio&utm_campaign=ig_profile_eapcet&utm_content=instagram_profile_link">click here to go to the app</a>.</p>
